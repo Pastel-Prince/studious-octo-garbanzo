@@ -1,0 +1,23 @@
+<html>
+<head>
+    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v0.3.0/dist/aframe-altspace-component.min.js"> </script>
+</head>
+<body>
+<a-assets>
+</a-assets>
+<a-scene altspace='vertical-align: bottom'>
+    <a-box position="0 2 -5" material="color:#f2c8f7" rotation="0 45 45" geometry="mergeTo:null">
+        <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+        <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+        <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+        <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+    </a-box>
+
+    <a-plane rotation="-90 0 0" scale="200 200 200" color="black"> </a-plane>
+    <a-sound src="#Nillili Mambo" position="0 0 0" autoplay preload="auto"> </a-sound>
+
+    <a-sky color="white"> </a-sky>
+
+</a-scene>
+</body>
